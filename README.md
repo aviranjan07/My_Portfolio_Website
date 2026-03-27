@@ -55,11 +55,11 @@ This is my personal portfolio website showcasing my skills, projects, and learni
 ---
 
 ## 📸 Preview
-<img width="1916" height="900" alt="image" src="https://github.com/user-attachments/assets/de214a36-b867-49c2-97c1-f506a5752332" />
-<img width="1916" height="900" alt="image" src="https://github.com/user-attachments/assets/de214a36-b867-49c2-97c1-f506a5752332" />
 
-<img width="1890" height="910" alt="image" src="https://github.com/user-attachments/assets/d6953b71-41eb-4d3e-af34-7ae3b268bc1f" />
-<img width="1890" height="910" alt="image" src="https://github.com/user-attachments/assets/d6953b71-41eb-4d3e-af34-7ae3b268bc1f" />
+<img width="598" height="509" alt="image" src="https://github.com/user-attachments/assets/9a21f983-fbe5-4f96-9830-b8c9a8ef0701" />
+
+<img width="598" height="488" alt="image" src="https://github.com/user-attachments/assets/88995bcb-cfd8-4006-a5b6-9d06b0c1c628" />
+
 
 
 ---
