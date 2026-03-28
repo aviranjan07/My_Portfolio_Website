@@ -1,124 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home ! Aviranjan</title>
-    <!-- link styles sheet -->
- <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <!-- favicon icon -->
- <link rel="shortcut icon" href="homeFavicon.svg" type="image/x-icon">
+<title>Aviranjan | Web Developer</title>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="homeFavicon.svg">
+
 </head>
+
 <body>
 
-    <!-- nav section start  -->
-    <nav class="navigation conteinnar">
-        <div class="nav-brand">iamaviranjan</div>
-        <ul class="non-bullet nav-pills">
-            <li class="list-inline">
-                <a class="link link-active" href="index.html">Home</a>
-            </li>
-            <li class="list-inline">
-                <a href="neoGprojects.html">neog projects</a>
-            </li>
-            <li class="list-inline">
-                <a href="blogs.html">blogs</a>
-            </li>
-            
-            <li class="list-inline">
-                <a href="pepcodingProject.html">pepcoding projects</a>
-            </li>
+<div id="progress-bar"></div>
 
-            <li class="list-inline">
-                <a href="youtubeProjects.html">youtube projects</a>
-            </li>
-           
-        </ul>
-    </nav>
-    <!-- nav section end -->
-
+<!-- NAVBAR -->
+<nav class="navbar">
     
-    <!-- header section start -->
-    <header class="hero">
-        <img class="hero-img" src="aviranjanpic.svg" alt="images">
-        <h1 class="hero-heading">Aviranjan the <span style="color: rgb(24, 41, 185);">web developer</span> </h1>
-    </header>
-    <!-- header section end -->
+    <!-- LEFT -->
+    <div class="logo">Aviranjan</div>
 
-    <!-- part of all section start -->
-         <!-- Technologies  -->
-    <section class="section  ow">
-        <div class="conteinar-center">
-            <h3>Technologies</h3>
-        <p>I'm familiar with HTML5, CSS3, Git, JavaScript, NodeJS, ReactJS, and Web Hosting.</p>
-    
+    <!-- CENTER (DESKTOP MENU) -->
+    <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="neoGprojects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="pepcodingProject.html">DSA</a></li>
+    </ul>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </section>  
 
-         <!-- neoGprojects  -->
-    <section class="section">
-        <div class="conteinar-center">
+        <button id="theme-toggle">🌙</button>
+    </div>
+
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero" data-aos="fade-up">
+    <img src="aviranjanpic.svg" class="hero-img" alt="Aviranjan profile">
+    <h1>I am <span class="typing"></span></h1>
+    <p>Building modern websites & learning DSA 🚀</p>
+    <a href="resume.pdf" class="btn">Download Resume</a>
+</section>
+
+<!-- ABOUT -->
+<section class="section" data-aos="zoom-in">
+    <h2>About Me</h2>
+    <p>I'm Aviranjan, a passionate web developer focused on building modern UI and mastering Data Structures & Algorithms.</p>
+</section>
+
+<!-- SKILLS -->
+<section class="section dark" data-aos="slide-left">
+    <h2>Technologies</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>NodeJS</span>
+        <span>Git</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" data-aos="zoom-in">
+    <h2>Projects</h2>
+    <div class="cards">
+
+        <div class="card">
             <h3>NeoG Projects</h3>
-        <p>I like to showcase my work and thus, you can see my projects hosted online.</p>
-         
-      <a class="link primary-link" href="neoGprojects.html">See projects</a>
+            <p>Collection of web apps built during learning.</p>
+            <a href="neoGprojects.html">View</a>
         </div>
-    </section>
-       <!-- pepcodingProject -->
-    <section class="section">
-        <div class="conteinar-center">
-            <h3>Pepcoding Projects</h3>
-        <p>I like to showcase my work and thus, you can see my projects hosted online.</p>
-         
-      <a class="link primary-link" href="pepcodingProject.html">See projects</a>
-        </div>
-    </section>
-       <!-- youtube projects -->
-       <section class="section">
-        <div class="conteinar-center">
-            <h3>Youtube Projects</h3>
-        <p>here is my all youtube projects. You can see all my projects. You can also collect the project code </p>
-         
-      <a class="link primary-link" href="youtubeProjects.html">See projects</a>
-        </div>
-    </section>
-        <!-- Blogs -->
-    <section class="section  ow">
-        <div class="conteinar-center">
-            <h3>Blogs</h3>
-        <p>I am also working on some technical and non techincal blogs. I like to document my journey of learning.</p>
-        <a class="link secondery-link" href="blogs.html">Read-Blogs</a>
-        </div>
-    </section> 
-    <!-- part of section end -->
 
+        <div class="card">
+            <h3>Pepcoding</h3>
+            <p>DSA practice and Java problem solving.</p>
+            <a href="pepcodingProject.html">View</a>
+        </div>
 
-    <!-- start footer section -->
-    <footer class="footer">
-        <div class="footer-header">Connect With Me </div>
-        <ul class="social-links">
-            <li class="list-inline"> 
-                <a class="link" href="https://www.instagram.com/aviranjan07/">Instagram</a>
-            </li>
-            <li class="list-inline" >
-                <a class="link" href="https://www.linkedin.com/in/aviranjan-das-8121a2211">Linkedin</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="https://twitter.com/aviranjan_das?s=08">Twitter</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="https://github.com/aviranjan07">github</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="https://www.youtube.com/channel/UCRG7g3RNvTL94kS8GnWIujA">youtube</a>
-            </li>
-        </ul>
-    </footer>
-    <!-- end footer section  -->
+        <div class="card">
+            <h3>YouTube Projects</h3>
+            <p>Projects built while learning.</p>
+            <a href="youtubeProjects.html">View</a>
+        </div>
 
-<!-- link javaScript  -->
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Connect With Me</h3>
+    <div class="social">
+        <a href="https://github.com/aviranjan07" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com/aviranjan07" target="_blank">Instagram</a>
+    </div>
+</footer>
+
 <script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+
 </body>
 </html>
