@@ -1,73 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube ! Projects</title>
-    <!-- link css  -->
-    <link rel="stylesheet" href="style.css">
-    <!-- link favicon  -->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<title>Aviranjan | Web Developer</title>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="homeFavicon.svg">
+
 </head>
+
 <body>
-    <!-- navbar section  -->
-    <nav class="navigation conteinnar">
-        <div class="nav-brand">iamaviranjan</div>
-        <ul class="non-bullet nav-pills">
-            <li class="list-inline">
-                <a class="link" href="index.html">home</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="neoGprojects.html">neog projects</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="blogs.html">blogs</a>
-            </li>
-          
-            <li class="list-inline">
-                <a  href="pepcodingProject.html">pepcoding project </a>
-            </li>
-            
-            <li class="list-inline">
-                <a class="link link-active" href="youtubeProjects.html">Youtube Projects</a>
-            </li>
-        </ul>
-    </nav>
 
-    <!-- header section  -->
-    <header class="hero">
-        <h1 class="hero-heading"> See my <span style="color: aquamarine;">Code</span> </h1>
+<div id="progress-bar"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    
+    <!-- LEFT -->
+    <div class="logo">Aviranjan</div>
+
+    <!-- CENTER (DESKTOP MENU) -->
+    <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="neoGprojects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="pepcodingProject.html">DSA</a></li>
+    </ul>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <button id="theme-toggle">🌙</button>
+    </div>
+
+</nav>
+
+
+ <!-- Header Section -->
+    <header class="hero-yt">
+        <h1 class="hero-heading-yt">
+            See my <span class="highlight">Code</span>
+        </h1>
     </header>
- 
-    <!-- projects section  -->
-    <ol class="list-non-bullet">
 
-        <!-- project 1 -->
-        <li >
-            <b>Simple Calculator </b> 
-        </li>
-        <small>February, 2022</small>
-          <p>
-              A calculator for quick simple calculations with a nice user interface and no ads.
-          </p>
-         <a class="link primary-link" href="https://simple-calculator07.netlify.app/">Live Project</a>
-         <a class="link secondery-link" href="https://github.com/aviranjan07/Simple_Calculator">View Source</a>
+    <!-- Projects Section -->
+    <section class="projects">
+        <ol class="non-bullet">
 
-         <hr class="hr">
-      
-        <!-- project 2 -->
-        <li>
-             <b> Degital Clock </b>
-        </li>
-        <small>February, 2022</small>
-        <p>
-            using javascript and crate a degital clock. 
-        </p>
-         <a class="link primary-link" href="https://degital-clock07.netlify.app/">Live Project </a>
-         <a class="link secondery-link" href="https://github.com/aviranjan07/Degital_Clock">View Source</a>
+            <!-- Project 1 -->
+            <li class="project-card">
+                <h2>Simple Calculator</h2>
+                <small>February, 2022</small>
 
-         <hr class="hr">
+                <p>
+                    A calculator for quick simple calculations with a nice user interface and no ads.
+                </p>
+
+                <div class="btn-group">
+    <a class="link primary-link" href="https://simple-calculator07.netlify.app/" target="_blank">
+        <i class="fa-solid fa-globe"></i> Live Project
+    </a>
+
+    <a class="link secondary-link" href="https://github.com/aviranjan07/Simple_Calculator" target="_blank">
+        <i class="fa-brands fa-github"></i> View Source
+    </a>
+</div>
+            </li>
+
+            <!-- Project 2 -->
+            <li class="project-card">
+                <h2>Digital Clock</h2>
+                <small>February, 2022</small>
+
+                <p>
+                    Using JavaScript to create a digital clock.
+                </p>
+
+                <div class="btn-group">
+    <a class="link primary-link" href="https://simple-calculator07.netlify.app/" target="_blank">
+        <i class="fa-solid fa-globe"></i> Live Project
+    </a>
+
+    <a class="link secondary-link" href="https://github.com/aviranjan07/Simple_Calculator" target="_blank">
+        <i class="fa-brands fa-github"></i> View Source
+    </a>
+</div>
+            </li>
+
+        </ol>
+    </section>
 
         <!-- project 3 -->
         <li> 
@@ -276,27 +306,27 @@
         <a class="link secondery-link" href="https://github.com/aviranjan07/Snake_Game">View Source</a>
     </ol>
 
-    <!-- footer section  -->
-    <footer class="footer">
-        <div class="footer-header">Connect With Social Media </div>
-        <ul class="social-links">
-            <li class="list-inline"> 
-                <a class="link" href="https://www.instagram.com/aviranjan07/">Instagram</a>
-            </li>
-            <li class="list-inline" >
-                <a class="link" href="https://www.linkedin.com/in/aviranjan-das-8121a2211">Linkedin</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="https://twitter.com/aviranjan_das?s=08">Twitter</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="https://github.com/aviranjan07">github</a>
-            </li>
-            <li class="list-inline">
-                <a class="link" href="https://www.youtube.com/channel/UCRG7g3RNvTL94kS8GnWIujA">youtube</a>
-            </li>
-        </ul>
-    </footer>
-  
+
+
+<!-- FOOTER -->
+<footer>
+    <h3>Connect With Me</h3>
+    <div class="social">
+        <a href="https://github.com/aviranjan07" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com/aviranjan07" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+
 </body>
 </html>
