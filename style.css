@@ -323,11 +323,153 @@ body {
 }
 
 /* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#020617;
+/* FOOTER */
+.footer {
+  position: relative;
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  backdrop-filter: blur(20px);
 }
+
+/* GRID */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+/* LOGO */
+.footer-logo h2 {
+  font-size: 24px;
+  background: linear-gradient(45deg, #38bdf8, #a78bfa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer-logo p {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+/* LINKS */
+.footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin: 8px 0;
+}
+
+/* UNDERLINE ANIMATION */
+.footer a {
+  color: #94a3b8;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  transition: 0.3s;
+}
+
+.footer a:hover::after {
+  width: 100%;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* CONTACT */
+.footer-contact p {
+  color: #94a3b8;
+  margin: 6px 0;
+}
+
+/* SOCIAL */
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #38bdf8;
+}
+
+/* NEWSLETTER */
+.newsletter-box {
+  display: flex;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.newsletter-box button {
+  padding: 10px 15px;
+  border: none;
+  background: linear-gradient(45deg, #38bdf8, #a78bfa);
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s;
+}
+
+.newsletter-box button:hover {
+  opacity: 0.8;
+}
+
+/* PARTICLES */
+.particles span {
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #38bdf8;
+  opacity: 0.2;
+  animation: float 10s linear infinite;
+}
+
+@keyframes float {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-100vh);}
+}
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  color: #64748b;
+  border-top: 1px solid #1e293b;
+  padding-top: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .footer { padding: 50px 5%; }
+}
+
 
 /* PROGRESS BAR */
 #progress-bar{

@@ -64,3 +64,13 @@ links.forEach(link => {
     document.getElementById("nav-links").classList.remove("active");
   });
 });
+
+function subscribe() {
+  const email = document.getElementById("email").value;
+
+  if(email === "" || !email.includes("@")) {
+    alert("Enter valid email ⚠️");
+  } else {
+    alert("Subscribed 🚀");
+  }
+}
