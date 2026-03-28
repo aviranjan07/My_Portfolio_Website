@@ -1,149 +1,392 @@
-@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Satisfy&display=swap');
-/* font-family: 'Satisfy', cursive; */
-/* font-family: 'Rancho', cursive; */
-:root{
-    --primary-color: #7C3AED;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    margin: 0%;
-    font-family: 'Rancho', cursive;;
-    font-size: 23px;
-}
-hr{
-    margin: 2rem 0rem;
-    
+    background:#0f172a;
+    color:white;
 }
 
-.margin-md{
-    margin: 2rem;
-}
-  /* conteinar */
-
-/* #fluid-conteinar{
-
-} */
-
-#center-conteinar{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 600px;
-    margin: auto;
+/* LIGHT MODE */
+body.light{
+    background:#ffffff;
+    color:#000;
 }
 
-    /* links */
-
-
-.primary-link{ 
-    background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    color: white;
-    padding: 8px 16px;
-    margin: 16px 16px 16px 0px;
-    
-    
-}
-.link{
-    text-decoration: none;
-    padding: o.5rem 1rem;
+/* NAVBAR PREMIUM */
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 30px;
+    background:rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    transition:0.3s;
 }
 
-.secondery-link{
-    color: rgb(58, 10, 235);
-    border-radius: 0.5rem;
-    border: 1px solid blue;
-    padding: 8px 16px;
-    margin: 16px 16px 16px 0px;
 
-}
-
-    /* list */
-.non-bullet{
-    list-style: none;
-} 
-.list-inline{
-    display: inline;
-    padding: 0rem 0.5rem;
-}
-/* navigation    */
-.nav-brand{
-    color: white;
-    text-align: left;
-    letter-spacing: 2px;
-}
-.navigation{
-    background-color: rgb(7, 22, 110);
-   padding: 1rem;
-   border-bottom-left-radius: 1rem;
-}
-.navigation .nav-brand{
-    font-weight: bold;
-}
-.navigation .nav-pills{
-    text-align: right;
-}
-.non-bullet li a{
-    text-decoration: none;
-    color: white;
-}
-.navigation .link-active{
-    font-weight: bold;
+/* RIGHT SIDE */
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
-  /* header */
+/* HAMBURGER */
+.menu-toggle{
+    display:none;
+    font-size:26px;
+    cursor:pointer;
+}
+
+.navbar ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    position:relative;
+}
+
+/* Smooth underline animation */
+.navbar a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#7c3aed;
+    transition:0.3s;
+}
+
+.navbar a:hover::after{
+    width:100%;
+}
+
+#theme-toggle{
+    cursor:pointer;
+}
+
+/* HAMBURGER */
+.menu-toggle{
+    width:30px;
+    height:20px;
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    cursor:pointer;
+}
+.menu-toggle span{
+    height:3px;
+    width:100%;
+    background:white;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+/* ANIMATION (ACTIVE) */
+.menu-toggle.active span:nth-child(1){
+    transform:rotate(45deg) translate(5px,5px);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:rotate(-45deg) translate(5px,-5px);
+}
+
+/* HERO */
 .hero{
-    padding: 2rem;
+    text-align:center;
+    padding:100px 20px;
 }
-.hero .hero-img{
-    max-width: 350px;
+
+/* youtube projects  */
+
+/* Root Colors */
+:root {
+    --primary-color: #2563eb;
+    --background: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #e2e8f0;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+/* Header */
+.hero-yt {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-heading-yt {
+    font-size: 2.5rem;
+}
+
+.highlight {
+    color: aquamarine;
+}
+
+/* Project Section */
+.projects {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Remove bullets */
+.non-bullet {
+    list-style: none;
+}
+
+/* Project Card */
+.project-card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+/* Delay for second card */
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Text spacing */
+.project-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.project-card small {
     display: block;
-    margin: auto;
-}
-.hero .hero-heading{
-    color: rgb(196, 214, 214);
-    padding-top: 1rem;
-    text-align: center;
+    margin-bottom: 1rem;
+    color: #94a3b8;
 }
 
-   /* section  */
+.project-card p {
+    margin-bottom: 1rem;
+}
 
-.section{
-    padding: 2rem;
-    text-align: center;
-    list-style-position: inside;
+/* Buttons */
+.btn-group {
+    display: flex;
+    gap: 10px;
 }
-.section h1{
-    text-align: center;
-}  
-.ow{
-    background-color: rgba(250, 240, 240, 0.685);
-}
-.conteinar-center{
-    max-width: 600px;
-    margin: auto;
-}
-  /* footer  */
-.footer{
-   background-color: rgb(48, 39, 175);
-   padding: 2rem 0rem;
-   text-align: center;
-   color: white;
-   border-top-right-radius: 1rem;
-}
-/* .footer-header{
 
-} */
-
-.social-links {
-  list-style: none;
-  color: white;
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
-.social-links a{
+
+.link i {
+    margin-right: 6px;
+}
+
+/* Primary Button */
+.primary-link {
+    background-color: var(--primary-color);
     color: white;
 }
 
-.mark {
-    color: red;
+/* Secondary Button */
+.secondary-link {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
-/* projects */
+/* Hover Effects */
+.primary-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.secondary-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero-heading-yt {
+        font-size: 2rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+}
+
+
+/*  */
+.hero-img{
+    width:180px;
+    margin-bottom:20px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#7c3aed;
+    color:white;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* SECTION */
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.dark{
+    background:#1e293b;
+}
+
+/* SKILLS */
+.skills span{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    background:#7c3aed;
+    border-radius:20px;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    width:220px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+/* PROGRESS BAR */
+#progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:4px;
+    background:#7c3aed;
+    width:0%;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .navbar ul{
+        position:absolute;
+        top:60px;
+        left:0;
+        width:100%;
+        background:#1e293b;
+        flex-direction:column;
+        align-items:center;
+        display:none;
+    }
+
+    .navbar ul.active{
+        display:flex;
+    }
+}
+
+@media (min-width:768px){
+
+    .menu-toggle:hover + ul{
+        display:flex;
+    }
+
+}
+
+.menu-toggle:hover{
+    color:#7c3aed;
+}
+
+/* FIX TEXT WIDTH */
+.typing{
+    display:inline-block;
+    min-width: 250px; /* adjust if needed */
+}
+
+/* ADD SMOOTH CURSOR */
+.typing::after{
+    content:"|";
+    margin-left:5px;
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:0;}
+}
