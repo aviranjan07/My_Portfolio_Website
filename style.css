@@ -342,7 +342,7 @@ body {
 .footer-logo h2 {
   font-size: 24px;
   background: linear-gradient(45deg, #38bdf8, #a78bfa);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -532,3 +532,5 @@ body {
 @keyframes blink{
     50%{opacity:0;}
 }
+
+
